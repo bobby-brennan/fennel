@@ -54,7 +54,9 @@ var config =
 
     // Authentication
     // Authentication methods so far: courier, htaccess, ldap
-    auth_method: 'htaccess',
+    auth_method: 'demo',
+    demo_username: 'username',
+    demo_password: 'password',
     auth_method_courier_socket: '/var/run/courier/authdaemon/socket',
     auth_method_htaccess_file: __dirname + '/demouser.htaccess',
 
