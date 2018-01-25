@@ -20,6 +20,8 @@ function checkLogin(basicAuth, username, password, callback)
 
     switch(config.auth_method)
     {
+        case 'demo':
+            callback(true);
         case 'courier':
             checkCourier(username, password, callback);
             break;
