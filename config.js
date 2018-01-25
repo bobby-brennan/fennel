@@ -56,7 +56,7 @@ var config =
     // Authentication methods so far: courier, htaccess, ldap
     auth_method: 'htaccess',
     auth_method_courier_socket: '/var/run/courier/authdaemon/socket',
-    auth_method_htaccess_file: 'demouser.htaccess',
+    auth_method_htaccess_file: __dirname + '/demouser.htaccess',
 
     // ldap authentication requires the ldapjs@1.0.0 node module. Please install manually
     auth_method_ldap_url: 'ldap://localhost:3002',
