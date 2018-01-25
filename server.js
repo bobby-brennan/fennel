@@ -198,8 +198,6 @@ var server = http.createServer(basic, function (req, res)
     });
 });
 
-server.listen(config.port);
-
 server.on('error', function (e)
 {
     log.warn('Caught error: ' + e.message);
@@ -212,5 +210,4 @@ process.on('uncaughtException', function(err)
     log.debug(err.stack);
 });
 
-// Put a friendly message on the terminal
-log.info("Server running at http://" + config.ip + ":" + config.port + "/");
+module.exports = server;
