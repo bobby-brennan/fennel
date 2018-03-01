@@ -13,6 +13,7 @@ var config = require('../config').config;
 
 var fs = require('fs');
 var path = require('path');
+var net = require('net');
 
 function checkLogin(basicAuth, username, password, callback)
 {
