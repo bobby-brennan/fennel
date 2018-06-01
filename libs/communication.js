@@ -38,7 +38,7 @@ function comm(req, res, reqBody)
     // request object as well as body
     this.req = req;
     this.reqBody = reqBody;
-    if (!this.req.url.endsWith('/') && !this.req.url.match(/\/[^\/]\.[^\/]$/)) this.req.url += '/';
+    if (!this.req.url.endsWith('/') && !this.req.url.endsWith('.ics')) this.req.url += '/';
 
     // response object as well as body we gonna write ourselfs
     this.res = res;
