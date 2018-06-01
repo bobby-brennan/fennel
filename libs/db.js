@@ -46,7 +46,7 @@ var CAL = sequelize.define('CAL', {
     pkey: { type: Sequelize.STRING, allowNull: false, unique: true, primaryKey: true},
     owner: { type: Sequelize.STRING, allowNull: false},
     timezone: { type: Sequelize.TEXT, allowNull: false},
-    order: { type: Sequelize.STRING, allowNull: false},
+    order: { type: Sequelize.STRING, allowNull: true},
     free_busy_set: { type: Sequelize.STRING, allowNull: false},
     supported_cal_component: { type: Sequelize.STRING, allowNull: false},
     colour: { type: Sequelize.STRING, allowNull: false},
