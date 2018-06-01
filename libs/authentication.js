@@ -23,6 +23,7 @@ function checkLogin(basicAuth, username, password, callback)
     {
         case 'demo':
             callback(username === config.demo_username && password === config.demo_password);
+            break;
         case 'courier':
             checkCourier(username, password, callback);
             break;
